@@ -1,7 +1,7 @@
 ﻿using Allure.Driver.Enums;
 using Newtonsoft.Json;
 
-namespace Allure.Tests.ConfigModels;
+namespace Allure.Core.Tests.ConfigModels;
 
 public class BaseConfig
 {

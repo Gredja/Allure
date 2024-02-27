@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
-using System.Net;
+﻿using System.Net;
 using System.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using RestSharp.Serialization.Json;
 
-namespace Allure.Common.Api.Extensions;
+namespace Allure.Core.Api.Extensions;
 
 public static class BodyExtensions
 {

@@ -1,5 +1,4 @@
-﻿using Allure.Tests.ConfigModels;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Allure.Core.Tests.ConfigModels;
 

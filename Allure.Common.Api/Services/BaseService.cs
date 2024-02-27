@@ -1,4 +1,4 @@
-﻿using Allure.Common.Api.RestClient;
+﻿using Allure.Core.Api.RestClient;
 
 namespace Allure.Core.Api.Services;
 

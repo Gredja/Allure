@@ -1,11 +1,11 @@
 ﻿using System.Net;
-using Allure.Common.Api.Extensions;
+using Allure.Core.Api.Extensions;
 using Allure.Logger;
 using NLog;
 using RestSharp;
 using RestSharp.Serializers.NewtonsoftJson;
 
-namespace Allure.Common.Api.RestClient;
+namespace Allure.Core.Api.RestClient;
 
 public class BaseClient : IBaseClient
 {

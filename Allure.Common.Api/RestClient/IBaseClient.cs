@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using RestSharp;
 
-namespace Allure.Common.Api.RestClient;
+namespace Allure.Core.Api.RestClient;
 
 public interface IBaseClient
 {

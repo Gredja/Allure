@@ -2,7 +2,6 @@
 using Allure.Core.Tests.ConfigModels;
 using Allure.Driver.Base;
 using Allure.Logger;
-using Allure.Tests.ConfigModels;
 using NUnit.Framework;
 using OpenQA.Selenium;
 
