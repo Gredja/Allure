@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Allure.Tests.ConfigModels;
+using Newtonsoft.Json;
 
-namespace Allure.Tests.ConfigModels;
+namespace Allure.Core.Tests.ConfigModels;
 
 public class BaseUiTestConfiguration
 {

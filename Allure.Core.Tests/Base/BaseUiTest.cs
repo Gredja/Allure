@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Allure.Core.Tests.ConfigModels;
 using Allure.Driver.Base;
 using Allure.Logger;
 using Allure.Tests.ConfigModels;
