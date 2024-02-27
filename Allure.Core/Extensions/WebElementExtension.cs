@@ -1,4 +1,7 @@
-﻿namespace Allure.Core.Extensions;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+
+namespace Allure.Core.Extensions;
 
 public static class WebElementExtension
 {
@@ -20,7 +23,7 @@ public static class WebElementExtension
         Thread.Sleep(TimeSpan.FromSeconds(delayInSeconds));
 
         var classes = element.GetAttribute("class");
-        return Enumerable.Any<string>(classes.Split(' '), @class => @class == className);
+        return classes.Split(' ').Any(@class => @class == className);
     }
 
     public static bool HasAttribute(this IWebElement element, string attributeName)

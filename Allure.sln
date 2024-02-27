@@ -5,7 +5,17 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core", "Allure.Core\Allure.Core.csproj", "{6C874B29-56A2-474E-B391-65718B673DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Driver", "Allure.Driver\Allure.Driver.csproj", "{48DA14AB-B8E3-4502-93FC-53F1E6699868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Driver", "Allure.Driver\Allure.Driver.csproj", "{48DA14AB-B8E3-4502-93FC-53F1E6699868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Tests", "Allure.Core.Tests\Allure.Core.Tests.csproj", "{D96EB189-4B3D-4E56-9523-E648CDF78744}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Logger", "Allure.Logger\Allure.Logger.csproj", "{BC701CA8-5AB3-40C7-9337-55E87A627618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Core.Pages", "Allure.Core.Pages\Allure.Core.Pages.csproj", "{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.PlayerController.Tests", "Allure.PlayerController.Tests\Allure.PlayerController.Tests.csproj", "{42F4DBA1-7189-47BF-9448-FF71A3719361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Common", "Allure.Common\Allure.Common.csproj", "{65E687D0-9CCD-497C-8030-2EC819810550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +31,26 @@ Global
 		{48DA14AB-B8E3-4502-93FC-53F1E6699868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DA14AB-B8E3-4502-93FC-53F1E6699868}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48DA14AB-B8E3-4502-93FC-53F1E6699868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D96EB189-4B3D-4E56-9523-E648CDF78744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96EB189-4B3D-4E56-9523-E648CDF78744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96EB189-4B3D-4E56-9523-E648CDF78744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96EB189-4B3D-4E56-9523-E648CDF78744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC701CA8-5AB3-40C7-9337-55E87A627618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC701CA8-5AB3-40C7-9337-55E87A627618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC701CA8-5AB3-40C7-9337-55E87A627618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC701CA8-5AB3-40C7-9337-55E87A627618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F4DBA1-7189-47BF-9448-FF71A3719361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F4DBA1-7189-47BF-9448-FF71A3719361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F4DBA1-7189-47BF-9448-FF71A3719361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F4DBA1-7189-47BF-9448-FF71A3719361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E687D0-9CCD-497C-8030-2EC819810550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E687D0-9CCD-497C-8030-2EC819810550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E687D0-9CCD-497C-8030-2EC819810550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E687D0-9CCD-497C-8030-2EC819810550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
