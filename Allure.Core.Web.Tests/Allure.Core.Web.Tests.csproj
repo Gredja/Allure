@@ -12,15 +12,16 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
-    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="NLog" Version="5.2.8" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.18.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Allure.Core.Api\Allure.Core.Api.csproj" />
-    <ProjectReference Include="..\Allure.Logger\Allure.Logger.csproj" />
+    <ProjectReference Include="..\Allure.Core.Tests\Allure.Core.Tests.csproj" />
+    <ProjectReference Include="..\Allure.Driver\Allure.Driver.csproj" />
   </ItemGroup>
 
 </Project>

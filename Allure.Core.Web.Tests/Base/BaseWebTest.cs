@@ -1,18 +1,18 @@
 ﻿using System.Globalization;
-using Allure.Core.Tests.ConfigModels;
+using Allure.Core.Web.Tests.ConfigModels;
 using Allure.Driver.Base;
 using Allure.Logger;
 using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace Allure.Core.Tests.Base;
+namespace Allure.Core.Web.Tests.Base;
 
-public abstract class BaseUiTest
+public abstract class BaseWebTest
 {
     protected IWebDriver Driver;
     protected NLog.Logger Logger;
     protected string DefaultDownloadDirectory;
-    protected BaseUiTestConfiguration BaseUiConfiguration;
+    protected BaseWebTestConfiguration BaseWebConfiguration;
     protected BaseDriverFactory DriverFactory;
 
     [SetUp]
@@ -24,12 +24,12 @@ public abstract class BaseUiTest
         DefaultDownloadDirectory = Path.Combine(Path.GetDirectoryName(executableFilePath), "downloads",
             $"{TestContext.CurrentContext.Test.MethodName}_{uniquePart}");
 
-        if (BaseUiConfiguration == null)
+        if (BaseWebConfiguration == null)
         {
             throw new Exception("Failed to read json config file. Please check the you initialized it!");
         }
 
-        Driver = DriverFactory.InitBrowser(BaseUiConfiguration.BaseConfig.Browser, DefaultDownloadDirectory);
+        Driver = DriverFactory.InitBrowser(BaseWebConfiguration.Browser, DefaultDownloadDirectory);
         Logger = LoggingManager.GetInstance();
         Logger.Info($"Start execution {TestContext.CurrentContext.Test.Name} test");
     }

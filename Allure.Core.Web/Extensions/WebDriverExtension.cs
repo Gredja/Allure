@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace Allure.Core.Extensions;
+namespace Allure.Core.Web.Extensions;
 
 public static class WebDriverExtension
 {

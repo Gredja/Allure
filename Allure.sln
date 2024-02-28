@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core", "Allure.Core\Allure.Core.csproj", "{6C874B29-56A2-474E-B391-65718B673DA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Web", "Allure.Core.Web\Allure.Core.Web.csproj", "{6C874B29-56A2-474E-B391-65718B673DA9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Driver", "Allure.Driver\Allure.Driver.csproj", "{48DA14AB-B8E3-4502-93FC-53F1E6699868}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Tests", "Allure.Core.Tests\Allure.Core.Tests.csproj", "{D96EB189-4B3D-4E56-9523-E648CDF78744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Web.Tests", "Allure.Core.Web.Tests\Allure.Core.Web.Tests.csproj", "{D96EB189-4B3D-4E56-9523-E648CDF78744}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Logger", "Allure.Logger\Allure.Logger.csproj", "{BC701CA8-5AB3-40C7-9337-55E87A627618}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Pages", "Allure.Core.Pages\Allure.Core.Pages.csproj", "{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Web.Pages", "Allure.Core.Web.Pages\Allure.Core.Web.Pages.csproj", "{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.PlayerController.Api.Tests", "Allure.PlayerController.Api.Tests\Allure.PlayerController.Api.Tests.csproj", "{42F4DBA1-7189-47BF-9448-FF71A3719361}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Api", "Allure.Common.Api\Allure.Core.Api.csproj", "{65E687D0-9CCD-497C-8030-2EC819810550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Api", "Allure.Core.Api\Allure.Core.Api.csproj", "{65E687D0-9CCD-497C-8030-2EC819810550}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Core.Api.Tests", "Allure.Core.Api.Tests\Allure.Core.Api.Tests.csproj", "{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Core.Tests", "Allure.Core.Tests\Allure.Core.Tests.csproj", "{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +72,18 @@ Global
 		{65E687D0-9CCD-497C-8030-2EC819810550}.Qa|Any CPU.Build.0 = Qa|Any CPU
 		{65E687D0-9CCD-497C-8030-2EC819810550}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E687D0-9CCD-497C-8030-2EC819810550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Qa|Any CPU.ActiveCfg = Qa|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Qa|Any CPU.Build.0 = Qa|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Qa|Any CPU.ActiveCfg = Qa|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Qa|Any CPU.Build.0 = Qa|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +93,8 @@ Global
 		{D96EB189-4B3D-4E56-9523-E648CDF78744} = {C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}
 		{276DFB61-79D7-45CA-BC7C-CC88F8DAFD53} = {C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}
 		{65E687D0-9CCD-497C-8030-2EC819810550} = {C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}
+		{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF} = {C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}
+		{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3} = {C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01B5C0DE-332D-4EEE-A315-C0CF12837E30}

@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 
-namespace Allure.PlayerController.Api.Tests.ConfigModels
+namespace Allure.PlayerController.Api.Tests.ConfigModels;
+
+public class BaseConfig
 {
-    public class BaseConfig
-    {
-        [JsonProperty("Environment")]
-        public string Environment { get; set; }
-    }
+    [JsonProperty("Environment")]
+    public string Environment { get; set; }
 }
