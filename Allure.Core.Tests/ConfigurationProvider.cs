@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Allure.Core.Tests;
 
-public static class ConfigurationProvider<T> where T: BaseConfig
+public static class ConfigurationProvider<T> where T: BaseTestConfiguration
 {
     public static T Configuration => InitializeConfiguration();
     private static NLog.Logger Logger => LoggingManager.GetInstance();
@@ -18,7 +18,6 @@ public static class ConfigurationProvider<T> where T: BaseConfig
 #else
         var json = File.ReadAllText($"{Environment.CurrentDirectory}{Path.DirectorySeparatorChar}config.json");
 #endif
-
-        return JsonConvert.DeserializeObject<T>(json);
+        return JsonConvert.DeserializeObject<T>(json); ;
     }
 }

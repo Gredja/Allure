@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Api", "Allure.C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C9C5E4F4-F8E6-47C0-B2C7-EDDB1212960A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Core.Api.Tests", "Allure.Core.Api.Tests\Allure.Core.Api.Tests.csproj", "{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Api.Tests", "Allure.Core.Api.Tests\Allure.Core.Api.Tests.csproj", "{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.Core.Tests", "Allure.Core.Tests\Allure.Core.Tests.csproj", "{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Tests", "Allure.Core.Tests\Allure.Core.Tests.csproj", "{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,6 +2,7 @@
 
 namespace Allure.Core.Api.Tests.ConfigModels;
 
-public class BaseApiTestConfiguration : BaseConfig
+public class BaseApiTestConfiguration : BaseTestConfiguration
 {
+
 }

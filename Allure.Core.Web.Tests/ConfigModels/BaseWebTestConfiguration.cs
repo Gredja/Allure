@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Allure.Core.Web.Tests.ConfigModels;
 
-public class BaseWebTestConfiguration : BaseConfig
+public class BaseWebTestConfiguration : BaseTestConfiguration
 {
     [JsonProperty("Browser")]
     public BrowserType Browser { get; set; }
