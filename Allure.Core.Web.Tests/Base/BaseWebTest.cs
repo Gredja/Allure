@@ -12,7 +12,7 @@ public abstract class BaseWebTest
     protected IWebDriver Driver;
     protected NLog.Logger Logger;
     protected string DefaultDownloadDirectory;
-    protected BaseWebTestConfiguration BaseWebConfiguration;
+    protected WebTestConfiguration WebConfiguration;
     protected BaseDriverFactory DriverFactory;
 
     [SetUp]
@@ -24,12 +24,12 @@ public abstract class BaseWebTest
         DefaultDownloadDirectory = Path.Combine(Path.GetDirectoryName(executableFilePath), "downloads",
             $"{TestContext.CurrentContext.Test.MethodName}_{uniquePart}");
 
-        if (BaseWebConfiguration == null)
+        if (WebConfiguration == null)
         {
             throw new Exception("Failed to read json config file. Please check the you initialized it!");
         }
 
-        Driver = DriverFactory.InitBrowser(BaseWebConfiguration.Browser, DefaultDownloadDirectory);
+        Driver = DriverFactory.InitBrowser(WebConfiguration.Browser, DefaultDownloadDirectory);
         Logger = LoggingManager.GetInstance();
         Logger.Info($"Start execution {TestContext.CurrentContext.Test.Name} test");
     }

@@ -1,5 +1,10 @@
 {
   "BaseConfig": {
-    "Environment": "Qa"
+    "Environment": "Qa",
+    "ThreadCount": 4
+  },
+  "BaseHost": "http://3.68.165.45/swagger-ui.html",
+  "Controllers": {
+    "PlayerController": "player-controller"
   }
 }

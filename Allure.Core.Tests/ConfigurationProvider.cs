@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Allure.Core.Tests;
 
-public static class ConfigurationProvider<T> where T: BaseTestConfiguration
+public static class ConfigurationProvider<T> where T: TestConfiguration
 {
     public static T Configuration => InitializeConfiguration();
     private static NLog.Logger Logger => LoggingManager.GetInstance();

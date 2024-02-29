@@ -12,6 +12,8 @@ public class PlayerTest : BasePlayerTest
     {
         var tt = false;
 
+        var ttt = Configuration.BaseHost;
+
         tt.Should().BeFalse();
     }
 }
