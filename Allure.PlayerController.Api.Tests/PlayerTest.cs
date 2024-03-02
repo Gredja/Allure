@@ -1,4 +1,5 @@
 ﻿using Allure.PlayerController.Api.Tests.Base;
+using Allure.PlayerController.Api.Tests.Services;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -13,6 +14,8 @@ public class PlayerTest : BasePlayerTest
         var tt = false;
 
         var ttt = Configuration.BaseHost;
+
+        var ggg = new PlayerService($"{Configuration.BaseHost}#/{Configuration.Controllers.PlayerController}");
 
         tt.Should().BeFalse();
     }
