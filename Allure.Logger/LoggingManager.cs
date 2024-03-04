@@ -16,6 +16,7 @@ public static class LoggingManager
     {
         var filepath = string.Empty;
         var loggerName = TestContext.CurrentContext.Test.FullName;
+        LogManager.Configuration ??= new LoggingConfiguration();
 
         if (Instances.Keys.All(x => x.Name != loggerName))
         {

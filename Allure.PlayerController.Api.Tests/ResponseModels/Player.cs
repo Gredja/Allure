@@ -7,7 +7,6 @@ public class Player
 {
     [JsonProperty("id")]
     public int Id { get; set; }
-
     
     [JsonProperty("screenName")]
     public string Name { get; set; }

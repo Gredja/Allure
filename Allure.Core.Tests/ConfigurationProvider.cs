@@ -1,5 +1,4 @@
 ﻿using Allure.Core.Tests.ConfigModels;
-using Allure.Logger;
 using Newtonsoft.Json;
 
 namespace Allure.Core.Tests;
@@ -7,7 +6,6 @@ namespace Allure.Core.Tests;
 public static class ConfigurationProvider<T> where T: TestConfiguration
 {
     public static T Configuration => InitializeConfiguration();
-    private static NLog.Logger Logger => LoggingManager.GetInstance();
 
     private static T InitializeConfiguration()
     {

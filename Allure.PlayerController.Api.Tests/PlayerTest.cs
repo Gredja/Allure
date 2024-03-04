@@ -9,14 +9,13 @@ namespace Allure.PlayerController.Api.Tests;
 public class PlayerTest : BasePlayerTest
 {
     [Test]
-    public void Test()
+    [Description("Test cases: C934240 | Get all players.")]
+    public void PlayerController_GetAllPlayer_SuccessGettingAllPlayers()
     {
-        var tt = false;
 
-        var ttt = Configuration.BaseHost;
 
-        var ggg = new PlayerService($"{Configuration.BaseHost}#/{Configuration.Controllers.PlayerController}");
+        var ggg = new PlayerService($"{Configuration.BaseHost}/{Configuration.Controllers.PlayerController}").GetAll().Content;
 
-        tt.Should().BeFalse();
+     
     }
 }

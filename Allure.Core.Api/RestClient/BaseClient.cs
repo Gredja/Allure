@@ -9,7 +9,7 @@ namespace Allure.Core.Api.RestClient;
 
 public class BaseClient : IBaseClient
 {
-    private ILogger Logger => LoggingManager.GetInstance();
+    private ILogger Logger => LoggingManager.Initialize();
 
     private IRestClient Client { get; }
 

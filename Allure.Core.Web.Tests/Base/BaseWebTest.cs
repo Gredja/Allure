@@ -30,7 +30,7 @@ public abstract class BaseWebTest
         }
 
         Driver = DriverFactory.InitBrowser(WebConfiguration.Browser, DefaultDownloadDirectory);
-        Logger = LoggingManager.GetInstance();
+        Logger = LoggingManager.Initialize();
         Logger.Info($"Start execution {TestContext.CurrentContext.Test.Name} test");
     }
 }
