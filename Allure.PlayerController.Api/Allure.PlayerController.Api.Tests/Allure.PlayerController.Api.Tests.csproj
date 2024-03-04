@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <Configurations>Debug;Release;Qa</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ConfigModels\**" />
+    <EmbeddedResource Remove="ConfigModels\**" />
+    <None Remove="ConfigModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Allure.Logger\Allure.Logger.csproj" />
+    <ProjectReference Include="..\..\Core\Allure.Core.Api.Tests\Allure.Core.Api.Tests.csproj" />
+    <ProjectReference Include="..\..\Core\Allure.Core.Api\Allure.Core.Api.csproj" />
+    <ProjectReference Include="..\Allure.PlayerController.Api.Services\Allure.PlayerController.Api.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config.qa.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
