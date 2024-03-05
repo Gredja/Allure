@@ -13,7 +13,7 @@ public class PlayerRepository(string baseServiceUrl) : BaseService(baseServiceUr
 
     Dictionary<string, string> Headers = new();
 
-    public IRestResponse<PlayersResponse> GetAll(HttpStatusCode expectedCode = HttpStatusCode.OK)
+    public IRestResponse<PlayerGetAllResponseDto> GetAll(HttpStatusCode expectedCode = HttpStatusCode.OK)
     {
         var request = new RequestBuilder(GetAllUri)
             .SetMethod(Method.GET)
@@ -21,6 +21,6 @@ public class PlayerRepository(string baseServiceUrl) : BaseService(baseServiceUr
             .AddHeader("Content-Type", "application/json")
             .Build();
 
-        return Client.Execute<PlayersResponse>(request, expectedCode);
+        return Client.Execute<PlayerGetAllResponseDto>(request, expectedCode);
     }
 }

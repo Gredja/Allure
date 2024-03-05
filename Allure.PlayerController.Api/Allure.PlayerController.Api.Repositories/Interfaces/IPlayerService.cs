@@ -4,5 +4,5 @@ namespace Allure.PlayerController.Api.Repositories.Interfaces;
 
 public interface IPlayerService
 {
-    public List<Player> GetAll();
+    public List<PlayerItem> GetAll();
 }

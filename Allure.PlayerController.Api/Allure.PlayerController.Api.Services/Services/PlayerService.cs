@@ -1,5 +1,4 @@
-﻿
-using Allure.PlayerController.Api.Domain.Interfaces;
+﻿using Allure.PlayerController.Api.Domain.Interfaces;
 using Allure.PlayerController.Api.Domain.ResponseModels;
 using Allure.PlayerController.Api.Repositories.Interfaces;
 using Allure.PlayerController.Api.Repositories.Repositories;
@@ -10,8 +9,8 @@ public class PlayerService(string baseUrl) : IPlayerService
 {
     private readonly IPlayerRepository _playerRepository = new PlayerRepository(baseUrl);
 
-    public List<Player> GetAll()
+    public List<PlayerItem> GetAll()
     {
-       return _playerRepository.GetAll().Data.Players; 
+       return _playerRepository.GetAll().Data.Players.ToList(); 
     }
 }

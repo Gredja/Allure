@@ -6,5 +6,5 @@ namespace Allure.PlayerController.Api.Domain.Interfaces;
 
 public interface IPlayerRepository
 {
-    public IRestResponse<PlayersResponse> GetAll(HttpStatusCode expectedCode = HttpStatusCode.OK);
+    public IRestResponse<PlayerGetAllResponseDto> GetAll(HttpStatusCode expectedCode = HttpStatusCode.OK);
 }
