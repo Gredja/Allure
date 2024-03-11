@@ -1,7 +1,7 @@
-﻿using Allure.Core.Tests.Config.Models;
+﻿using Allure.Core.Configuration.Config.Models;
 using Newtonsoft.Json;
 
-namespace Allure.Core.Tests.ConfigModels;
+namespace Allure.Core.Configuration.Config;
 
 public class TestConfiguration
 {

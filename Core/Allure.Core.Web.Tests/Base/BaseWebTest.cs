@@ -1,8 +1,9 @@
 ﻿using System.Globalization;
-using Allure.Core.Web.Tests.ConfigModels;
+using Allure.Core.Web.Tests.Config;
 using Allure.Driver.Base;
 using Allure.Logger;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 
 namespace Allure.Core.Web.Tests.Base;
@@ -32,5 +33,47 @@ public abstract class BaseWebTest
         Driver = DriverFactory.InitBrowser(WebConfiguration.Browser, DefaultDownloadDirectory);
         Logger = LoggingManager.Initialize();
         Logger.Info($"Start execution {TestContext.CurrentContext.Test.Name} test");
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+        try
+        {
+            if (Driver != null)
+            {
+                if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
+                {
+                    TakeScreenshot();
+                }
+
+                Driver.Quit();
+                Driver.Dispose();
+                Driver = null;
+            }
+        }
+        catch (Exception e)
+        {
+            Logger.Warn(e, "Unable to close browser");
+        }
+
+        Logger.Info($"Finish execution {TestContext.CurrentContext.Test.Name} test");
+        LoggingManager.AttachResultsToTest();
+        LoggingManager.CleanInstance();
+    }
+
+    private void TakeScreenshot()
+    {
+        try
+        {
+            var filename =
+                @$"{TestContext.CurrentContext.TestDirectory}{Path.DirectorySeparatorChar}{TestContext.CurrentContext.Test.FullName}_[{DateTime.Now:yyyy.dd.M--HH-mm-ss}].png";
+            ((ITakesScreenshot)Driver).GetScreenshot().SaveAsFile(filename);
+            TestContext.AddTestAttachment(filename);
+        }
+        catch (Exception screenshotTakerException)
+        {
+            Logger.Warn($"Can not save screenshot. Message: {screenshotTakerException.Message}");
+        }
     }
 }

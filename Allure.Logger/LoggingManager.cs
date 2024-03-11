@@ -55,9 +55,29 @@ public static class LoggingManager
 
     public static void CleanInstance()
     {
-        var instance = Instances.Keys.FirstOrDefault(x => x.Name == TestContext.CurrentContext.Test.FullName) ??
-                       throw new InvalidOperationException(
-                           $"You're trying to remove logger instance for '{TestContext.CurrentContext.Test.FullName}', but it is not initialized. Call .Initialize()");
+        var instance = Instances.Keys.FirstOrDefault(x => x.Name == TestContext.CurrentContext.Test.FullName);
+        if (instance == null)
+        {
+            throw new InvalidOperationException(
+                $"You're trying to remove logger instance for '{TestContext.CurrentContext.Test.FullName}', but it is not initialized. Call .Initialize()");
+        }
+
         Instances.TryRemove(instance, out _);
+    }
+
+    public static void AttachResultsToTest()
+    {
+        var instance = Instances.Keys.FirstOrDefault(x => x.Name == TestContext.CurrentContext.Test.FullName);
+        if (instance == null)
+        {
+            throw new InvalidOperationException(
+                $"You're trying to remove logger instance for '{TestContext.CurrentContext.Test.FullName}', but it is not initialized. Call .Initialize()");
+        }
+
+        var filepath = Instances[instance];
+        if (!string.IsNullOrWhiteSpace(filepath))
+        {
+            TestContext.AddTestAttachment(filepath);
+        }
     }
 }

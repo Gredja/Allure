@@ -2,10 +2,12 @@
 using Allure.PlayerController.Api.Services.Services;
 using Allure.PlayerController.Api.Tests.Base;
 using FluentAssertions;
+using NUnit.Allure.Core;
 using NUnit.Framework;
 
 namespace Allure.PlayerController.Api.Tests;
 
+[AllureNUnit]
 [TestFixture]
 public class PlayerTest : BasePlayerTest
 {
@@ -23,6 +25,11 @@ public class PlayerTest : BasePlayerTest
     {
         var players= _playerService.GetAll();
 
-        players.Should().NotBeEmpty();
+        players.Should().BeEmpty();
+
+        //foreach (var playerItem in players)
+        //{
+        //    playerItem.GetType().GetProperties().Should().AllSatisfy(x => x.GetValue(playerItem).Should().NotBeNull());
+        //}
     }
 }

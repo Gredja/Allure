@@ -21,15 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C9C5E4F4-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Api.Tests", "Core\Allure.Core.Api.Tests\Allure.Core.Api.Tests.csproj", "{40063C08-2C70-4BD6-A3AD-389DBFDEF1FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Tests", "Core\Allure.Core.Tests\Allure.Core.Tests.csproj", "{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.Core.Configuration", "Core\Allure.Core.Configuration\Allure.Core.Configuration.csproj", "{A7C2E212-812B-4F4D-A53B-ADF2080CBDD3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Allure.PlayerController.Api", "Allure.PlayerController.Api", "{060E1C27-5248-447B-9578-6254EC137CCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.PlayerController.Api.Domain", "Allure.PlayerController.Api\Allure.PlayerController.Api.Domain\Allure.PlayerController.Api.Domain.csproj", "{B811E445-3922-4983-AF59-91F04C8C92BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.PlayerController.Api.Domain", "Allure.PlayerController.Api\Allure.PlayerController.Api.Domain\Allure.PlayerController.Api.Domain.csproj", "{B811E445-3922-4983-AF59-91F04C8C92BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.PlayerController.Api.Repositories", "Allure.PlayerController.Api\Allure.PlayerController.Api.Repositories\Allure.PlayerController.Api.Repositories.csproj", "{24824E9C-C4C4-4481-B315-DCA0C0144E24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.PlayerController.Api.Repositories", "Allure.PlayerController.Api\Allure.PlayerController.Api.Repositories\Allure.PlayerController.Api.Repositories.csproj", "{24824E9C-C4C4-4481-B315-DCA0C0144E24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allure.PlayerController.Api.Services", "Allure.PlayerController.Api\Allure.PlayerController.Api.Services\Allure.PlayerController.Api.Services.csproj", "{9C8F72F6-F2EB-44E1-B409-9FE287783B0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allure.PlayerController.Api.Services", "Allure.PlayerController.Api\Allure.PlayerController.Api.Services\Allure.PlayerController.Api.Services.csproj", "{9C8F72F6-F2EB-44E1-B409-9FE287783B0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

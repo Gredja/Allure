@@ -11,7 +11,7 @@ public class PlayerItem
     [JsonProperty("gender", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string Gender { get; set; }
 
-    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    [JsonProperty("id", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
     public long? Id { get; set; }
 
     [JsonProperty("role", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

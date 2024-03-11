@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Allure.Core.Tests.Config.Models;
+namespace Allure.Core.Configuration.Config.Models;
 
 public class BaseConfig
 {

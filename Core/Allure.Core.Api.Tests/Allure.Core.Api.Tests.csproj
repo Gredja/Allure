@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Allure.Core.Tests\Allure.Core.Tests.csproj" />
+    <ProjectReference Include="..\Allure.Core.Configuration\Allure.Core.Configuration.csproj" />
   </ItemGroup>
 
 </Project>
