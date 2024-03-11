@@ -25,7 +25,7 @@ public class PlayerTest : BasePlayerTest
     {
         var players= _playerService.GetAll();
 
-        players.Should().BeEmpty();
+        players.Should().NotBeEmpty();
 
         //foreach (var playerItem in players)
         //{
