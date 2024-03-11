@@ -1,1 +1,14 @@
-﻿
+﻿{
+  "enabled": true,
+  "server": {
+    "url": "http://localhost:8080",
+    "project": "player",
+    "apiKey": "ww_LZ2d20xETI2lj-ZP_8v4GpzWe-Q9cVM7yoOy1Fqein4tWneQC3fq4Jbt_yRNMaug"
+  },
+  "launch": {
+    "name": "Player API TESTS",
+    "description": "My awesome launch",
+    "debugMode": false,
+    "attributes": [ "smoke" ]
+  }
+}

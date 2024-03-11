@@ -2,12 +2,10 @@
 using Allure.PlayerController.Api.Services.Services;
 using Allure.PlayerController.Api.Tests.Base;
 using FluentAssertions;
-using NUnit.Allure.Core;
 using NUnit.Framework;
 
 namespace Allure.PlayerController.Api.Tests;
 
-[AllureNUnit]
 [TestFixture]
 public class PlayerTest : BasePlayerTest
 {
@@ -26,10 +24,19 @@ public class PlayerTest : BasePlayerTest
         var players= _playerService.GetAll();
 
         players.Should().NotBeEmpty();
+    }
 
-        //foreach (var playerItem in players)
-        //{
-        //    playerItem.GetType().GetProperties().Should().AllSatisfy(x => x.GetValue(playerItem).Should().NotBeNull());
-        //}
+    [Test]
+    [Description("Test cases: C934242 | Get all players.")]
+    public void PlayerController_GetAllPlayer_АailureGettingAllPlayers()
+    {
+        var players = _playerService.GetAll();
+
+        players.Should().NotBeEmpty();
+
+        foreach (var playerItem in players)
+        {
+            playerItem.GetType().GetProperties().Should().AllSatisfy(x => x.GetValue(playerItem).Should().NotBeNull());
+        }
     }
 }
