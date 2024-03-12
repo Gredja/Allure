@@ -27,6 +27,15 @@ public class PlayerTest : BasePlayerTest
     }
 
     [Test]
+    [Description("Test cases: C934241 | Get all players.")]
+    public void PlayerController_GetAllPlayer_SuccessGettingAllPlayersV2()
+    {
+        var players = _playerService.GetAll();
+
+        players.Should().NotBeEmpty();
+    }
+
+    [Test]
     [Description("Test cases: C934242 | Get all players.")]
     public void PlayerController_GetAllPlayer_АailureGettingAllPlayers()
     {
